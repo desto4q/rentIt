@@ -14,18 +14,18 @@ export default function Button({
   onPress?: () => any;
 }) {
   return (
-      <TouchableOpacity
-        onPress={() => {
-          onPress && onPress();
-        }}
-        style={tw(
-          `p-2 py-4 bg-purple-800 items-center justify-center rounded-md ${
-            style && style
-          }`,
-        )}>
-        <Text style={tw(`text-xl ${textStyle && textStyle}`)}>
-          {title && title}
-        </Text>
-      </TouchableOpacity>
+    <TouchableOpacity
+      onPress={() => {
+        onPress && onPress();
+      }}
+      style={tw(
+        `p-2 py-4 bg-purple-800 items-center justify-center rounded-md ${
+          style ? style : ''
+        }`,
+      )}>
+      <Text style={tw(`text-xl ${textStyle ? textStyle : ''}`)}>
+        {title && title}
+      </Text>
+    </TouchableOpacity>
   );
 }

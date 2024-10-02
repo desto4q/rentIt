@@ -22,8 +22,8 @@ export default function VerifyEmail() {
           We've sent a verification link to [user's email address]. Please check
           your inbox and click the link to verify your email.
         </Text>
-        <Button title="Resend Verification Link"  style='w-full 300 mt-3'/>
-        <Button title="Check Verifcation"  style='w-full 300 mt-3 bg-blue-600'/>
+        <Button title="Resend Verification Link"  style='w-full mt-3'/>
+        <Button title="Check Verifcation"  style='w-full mt-3 bg-blue-600'/>
       </View>
     </View>
   );

@@ -12,6 +12,7 @@ export default function StackNav() {
     <Stack.Navigator
       initialRouteName="signIn"
       screenOptions={{
+        freezeOnBlur:true,
         headerShown: false,
       }}>
       {!lifeCycleObj.signedIn ? (

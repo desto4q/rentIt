@@ -9,7 +9,9 @@ import {colors} from '../utils/utils';
 let BTab = createBottomTabNavigator();
 export default function BottomTab() {
   return (
-    <BTab.Navigator>
+    <BTab.Navigator screenOptions={{
+      headerShown:false
+    }}>
       <BTab.Screen
         name="Home"
         component={TabHome}
